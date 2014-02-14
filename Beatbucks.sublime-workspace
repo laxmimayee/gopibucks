@@ -1,0 +1,752 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cl",
+				"click"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"image",
+				"image_tag"
+			],
+			[
+				"in",
+				"integer"
+			],
+			[
+				"un",
+				"unless	unless … end"
+			],
+			[
+				"redirec",
+				"redirect_to"
+			],
+			[
+				"user",
+				"users"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/devise/registrations/edit.html.erb",
+			"settings":
+			{
+				"buffer_size": 7278,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1717,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/basicinfo1.html.erb",
+			"settings":
+			{
+				"buffer_size": 3043,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 5403,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/application_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1413,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/_basicinfo.html.erb",
+			"settings":
+			{
+				"buffer_size": 2863,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 4704,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/user.rb",
+			"settings":
+			{
+				"buffer_size": 2651,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/registrations/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 5388,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/smartbuzz/Downloads/countries/country.html",
+			"settings":
+			{
+				"buffer_size": 949,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/controllers/users_controller.rb",
+			"settings":
+			{
+				"buffer_size": 958,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/home_controller.rb",
+			"settings":
+			{
+				"buffer_size": 124,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/mailer/confirmation_instructions.html.erb",
+			"settings":
+			{
+				"buffer_size": 2246,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/devise/sessions/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 2792,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/run/user/smartbuzz/gvfs/smb-share:server=phpserver,share=html/beatbucks/dev/html/join-new.html",
+		"/home/smartbuzz/Downloads/countries/country.html",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/devise/confirmations_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/devise/omniauth_callbacks_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/devise/passwords_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/devise/sessions_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/devise/unlocks_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/devise_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/devise/registrations_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/home/edit.html.erb",
+		"/home/smartbuzz/Desktop/French-English words~",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/jquery.validate.js",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/jquery.min.js",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/sessions/new.html.erb",
+		"/home/smartbuzz/.rvm/gems/ruby-2.0.0-p353/bundler/gems/paperclip-81669c11dee0/lib/paperclip/attachment.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/application_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/config/environments/development.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets/colorbox.css",
+		"/home/smartbuzz/Desktop/Beatbucks/app/models/user.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/registrations/new.html.erb",
+		"/home/smartbuzz/Desktop/html/socialnetwork.html",
+		"/home/smartbuzz/Desktop/Beatbucks/Gemfile",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/application.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_basicinfo1.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/basicinfo1.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/users/index.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_basicinfo.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/mailer/confirmation_instructions.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/config/initializers/devise.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/helpers/users_helper.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/config/locales/devise.en.yml",
+		"/home/smartbuzz/Desktop/html/css/custom.css",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/users_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_logged.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/application.js",
+		"/home/smartbuzz/Desktop/index.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/registrations/new.js.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/config/initializers/client_side_validations.rb",
+		"/home/smartbuzz/Downloads/rails4_client_side_validations-0.0.3.gem_FILES/metadata",
+		"/home/smartbuzz/Desktop/ol/app/views/devise/registrations/new.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/config/application.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/registrations/edit.html.erb",
+		"/home/smartbuzz/Desktop/BeatBucks/db/migrate/20140130082145_countries.rb~",
+		"/home/smartbuzz/Desktop/Beatbucks/config/routes.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/passwords/edit.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets/application.css",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets/bootstrap.css",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets/custom.css",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/users/loginModal.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/Beatbucks.sublime-workspace",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/producers_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/models/producer_profile.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_producerinfo.html .erb",
+		"/home/smartbuzz/Desktop/Beatbucks/db/migrate/20140205100941_add_colums_to_users.rb",
+		"/home/smartbuzz/Gopi/Desktop/Untitled Folder/bodyRyzm/support-loadings/Article_src_v4/ModalPopupWindow.js",
+		"/home/smartbuzz/Gopi/Desktop/Untitled Folder/bodyRyzm/support-loadings/Article_demo_v4/Parent.htm",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/producers/createprofile.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/producers/newprofile.html .erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets/twitter-bootstrap-static/fontawesome.css.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/db/migrate/20140203114646_add_attachment_Profile_Image_to_producer_profiles.rb",
+		"/home/smartbuzz/dropbox-docs/BodyRyzm-old1/html/involvement.html",
+		"/run/user/smartbuzz/gvfs/smb-share:server=phpserver,share=html/beatbucks/docs/Mock-ups NOW/Dashboard.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/home/smartbuzz/Desktop/Beatbucks",
+			"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets",
+			"/home/smartbuzz/Desktop/Beatbucks",
+			"/home/smartbuzz/Gopi/Desktop/Untitled Folder/bodyRyzm/support-loadings",
+			"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"(function( window, undefined ) {",
+			"onload",
+			"validation",
+			"#login",
+			"login",
+			"paperclip",
+			"email",
+			"emailregex",
+			"email",
+			"pmi",
+			"image",
+			"fluid",
+			"raw-fluid",
+			"raw-fluid b_bar",
+			"<header class=\"container\"><!--header section!-->\n    \n\n    <section class=\"raw-fluid b_bar\"><!--black bar !-->\n\n        <div class=\"span3 browse\"><!--browse section!-->\n            <ul>\n                <li><a href=\"#\">Browse  <%= image_tag (\"down-arrow.png\") %></a></li>\n                            </ul>\n            \n        </div><!--browse section!-->\n       \n            \n       \n        \n        <div class=\"span5 logo\"><!--logo section!-->\n            <%= image_tag (\"logo.png\") %>\n           \n        </div><!--logo section!-->\n        \n        <div class=\"span4  browse\"><!--login!-->\n\n         \n                           <span style='margin:5px 0 0 0;'> <% if user_signed_in? %> \n\n                                      <% if current_user.Role == 'Producer/BeatMaker/Composer' %>\n                                          <%= current_user.Firstname %> \n                                           \n                                          <%= image_tag (\"menu-arrow.png\"), :class=> \"pmi\" %>\n                                      \n                                            <nav class='nav' >\n                                                          <ul>\n                                                              <li><a href=\"#\">About</a></li>\n                                                                <li><a href=\"#\">Blog</a>\n                                                                  <ul>\n                                                                      <li><a href=\"#\"><img src=\"images/dboard.png\" /> Dashboard</a></li>\n                                                                     <li> <a href= \"/users/edit\" > Edit Details</a> </li>\n                                                                        <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %> </li>\n                                                                    </ul>\n                                                                </li>\n                                                                <li><a href=\"#\">Help</a></li>\n                                                                <li><a href=\"#\">Sell</a></li>\n                                                            </ul>\n                                                        </nav>\n                                          \n\n                                          \n                                          <% else %>   \n                                          \n                                          <%= current_user.Firstname %>     \n                                          <%= link_to('Logout', destroy_user_session_path, :method => :delete)%>    \n                                          <a href= \"/users/edit\" class=\"join\"> Edit Details</a>\n                                            <% end %>  \n                                  <% else %>\n                  \n                        <%= link_to('Login', new_user_session_path)  %>  \n\n                  \n                        </span>\n         <a href= \"/users/sign_up\" class=\"join\" style='margin:5px 5px 0 5px;'>Join</a>\n        </div><!--login!-->\n        \n        \n        <% end %>\n\n        <div class=\"span1 menu_arrow\"> </div>\n    </section><!--black bar !-->\n\n</header><!--header section!-->",
+			"Email is invalid",
+			"Localization",
+			"//=",
+			"divShowChildWindowValues",
+			"render",
+			" \n",
+			"p_name",
+			"nav",
+			"navigation"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/devise/registrations/edit.html.erb",
+					"settings":
+					{
+						"buffer_size": 7278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6541,
+								6541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2703.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 1717,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								796,
+								796
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/users/basicinfo1.html.erb",
+					"settings":
+					{
+						"buffer_size": 3043,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1016,
+								1016
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/users/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 5403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								629,
+								629
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/application_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1413,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								863,
+								863
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/views/layouts/_basicinfo.html.erb",
+					"settings":
+					{
+						"buffer_size": 2863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1615,
+								1615
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 357.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 4704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1052,
+								1052
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/models/user.rb",
+					"settings":
+					{
+						"buffer_size": 2651,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1380,
+								1380
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 93.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/devise/registrations/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 5388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2402,
+								2402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 548.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/home/smartbuzz/Downloads/countries/country.html",
+					"settings":
+					{
+						"buffer_size": 949,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								642,
+								642
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/controllers/users_controller.rb",
+					"settings":
+					{
+						"buffer_size": 958,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								583,
+								583
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/controllers/home_controller.rb",
+					"settings":
+					{
+						"buffer_size": 124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/views/devise/mailer/confirmation_instructions.html.erb",
+					"settings":
+					{
+						"buffer_size": 2246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								538,
+								538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/views/devise/sessions/new.html.erb",
+					"settings":
+					{
+						"buffer_size": 2792,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								128,
+								128
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 302.0,
+	"status_bar_visible": true
+}

@@ -1,0 +1,210 @@
+ 
+ 
+<script type="text/javascript">
+     
+$(document).ready(function(){
+
+        $(".role").change(function(){
+            $( "select option:selected").each(function(){
+                if($(this).attr("value")=="Producer/BeatMaker/Composer"){
+                  window.alert ("You should be a Producer OR BeatMaker OR Composer" )
+                    $(".Artist").show();
+                    $(".lft_part").show();
+                    
+                    
+                  }
+                if($(this).attr("value")=="MusicLover"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                     
+                }
+                if($(this).attr("value")=="DJ"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                    
+                }
+              if($(this).attr("value")=="Singer"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                    
+                }
+
+        if($(this).attr("value")=="Others"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                    
+                }
+
+
+            });
+        }).change();
+
+ 
+          
+
+    });
+
+
+</script>
+
+ 
+
+  <% if current_user.Role == 'Producer/BeatMaker/Composer' %>
+              <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+ 
+
+
+ 
+<html>
+<head>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" /> -->
+<title>Producers Page</title>
+
+
+ 
+
+  
+
+
+</head>
+
+
+<body>
+
+<header class="container"><!--header section!-->
+   <%= render :partial => 'layouts/logged' %>
+
+  <section class="row-fluid b_bar"><!--black bar !-->
+      <div class="span3 center"><%= image_tag("logo.png") %></div>
+        <div class="span3"></div>
+        <div class="span2 ad_track"><%= image_tag("plus.png") %> Add New Track</div>
+        <div class="span3"><div class="p_name"><%=  image_tag (@current_user.pimage),:style => "max-width:25%;border 1px solid #00000;" %> <%= current_user.ArtistName %> </div></div>
+        <div class="span1 menu_arrow"><span><%= image_tag("menu-arrow.png", :class=> "pmi") %></span></div>
+    </section><!--black bar !-->
+
+</header><!--header section!-->
+
+
+<div class="container"><!--container part-->
+  <div class="row-fluid dashboard">
+    <div class="span3"><!--left section!-->
+        <div class="d_left">
+              
+                <h2>Your Store</h2>
+                <ul>
+                  <li><span><%= image_tag("track.png") %></span>Track</li>
+                    <li><span><%= image_tag("sound.png") %></span>Beat Packs</li>
+                    
+                    <li><span><%= image_tag("pl.png") %></span>Widget</li>
+                </ul>
+                
+                <h2>Dashboard</h2>
+                <ul>
+                  <li><span><%= link_to image_tag("profile.png"),"/users/edit" %></span>Profile</li>
+                    <li><span><%= image_tag("report.png") %></span>Reports</li>
+                   
+                </ul>
+                
+                 <h2>CONFIGURATION</h2>
+                <ul>
+                  <li><span><%= image_tag("setting.png") %></span>Settings</li>
+                   
+                </ul>
+            </div>
+      </div><!--left section!-->
+    
+      <div class="span9"><!--right section!-->
+        <div class="d_right"><!--right work area!-->
+              <div class="row-fluid top_h"><!--top heading!-->
+                        <div class="span9"> <h3><%= image_tag("about.png") %> Profile</h3></div>
+                       
+                        <div class="span2"> <%= image_submit_tag("save.png") %></a></div>
+                    </div><!--top heading!-->
+                  <div  style="margin-top: 0px;background-color:#fff; box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5); color: red ", postion = "absolute">
+       
+                      <%= devise_error_messages! %>
+             
+
+                        </div>
+
+                
+                <div class="tab_sec"><!--tab section!-->
+                  <ul>
+                      <li> <div class= "binfo"><a href="" class="act">Basic Info</a></div></li>
+                      <li> <div id= "sinfio" ><a href="" id="act1" >Social Networks</a></li></div>
+                    </ul>
+                </div><!--tab section!-->
+
+
+
+          <div class= "Basicinfo">
+            <div class="row-fluid form_sec">
+                        
+   </div>
+
+             <div class="row-fluid form_sec"><!--form raw !-->
+                        <div class="span2"> <%= f.label :"Artist Name or Stage Name" %> </div>
+                         <div class="span4"><%= f.text_field :ArtistName %></div>
+                          <div class="span6"> <%= current_user.ArtistName %> .Beatbucks.com </div>
+                       
+
+               </div><!--form raw !-->
+                
+              <div class="row-fluid form_sec"><!--form raw !-->
+                    <div class="span2"> <%= f.label :"HomeTown" %></div>
+                    <div class="span4"><%= f.text_field :HomeTown %></div>  
+                    <div class="span3"> <%= f.select :Country, Countries.all.collect {|l| [ l.cname  ] } %></div>
+                    <div class="span2"><select><option></option></select></div> <!-- add a feild for State Code !-->
+                    <div class="span1"></div>
+               </div><!--form raw !-->
+                
+              <div class="row-fluid form_sec"><!--form raw !-->
+                  <div class="span2"> <%= f.label :"Profile image" %></div>
+                    <div class="span8"> <ul> <span1> <li> <%=  image_tag (@current_user.pimage),:style => "max-width:35%;border 5px solid #00000;" %> </li> </span1>
+
+                        <span> <li><%= f.check_box(:delete_pimage) %>  Delete </li></span> 
+                                         <span> <li><%=  f.file_field :pimage %></li></ul>  </span> </div>
+                  
+              </div><!--form raw !-->
+                
+                 <div class="row-fluid form_sec"><!--form raw !-->
+                  <div class="span2"><%= f.label :"About" %></div>
+                    <div class="span5">  <%= f.text_area :About, size: "5x5" %>   </div>
+                    <div class="span5"></div>
+
+
+
+
+                </div><!--form raw !-->
+                 </div>
+
+
+            </div><!--right work area!-->
+      </div><!--right section!-->
+ 
+           
+    </div>
+
+</div><!--container part-->
+
+
+
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" charset="utf-8" src="js/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" charset="utf-8" src="js/responsive-tables.js"></script> -->
+</body>
+
+</html>
+
+<% end %>
+
+            <% else %>   
+
+            <%= render :partial => 'layouts/basicinfo' %>
+
+      <% end %>
+ 
+
+

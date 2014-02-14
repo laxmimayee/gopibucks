@@ -1,0 +1,15 @@
+<nav class='nav' >
+                <ul>
+                    <li><a href="#">About</a></li>
+                      <li><a href="#">Blog</a>
+                        <ul>
+                        </br>
+                        <li> <%= image_tag("dboard.png") %> <a href= "/users/edit" >  Dashboard</a></li>
+                           
+                              <li><%= image_tag("l_out.png") %> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %> </li>
+                          </ul>
+                      </li>
+                      <li><a href="#">Help</a></li>
+                      <li><a href="#">Sell</a></li>
+                  </ul>
+</nav>

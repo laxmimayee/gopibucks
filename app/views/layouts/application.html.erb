@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html><title>Beatbucks</title>
+<head>
+  
+     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+     <%= javascript_include_tag "application","countries", "data-turbolinks-track" => true %>
+
+    <link rel="stylesheet" href="http://www.jacklmoore.com/colorbox/example2/colorbox.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://www.jacklmoore.com/colorbox/jquery.colorbox.js"></script>
+    
+    <%= csrf_meta_tags %>
+
+<!--  <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/custom.css">
+ -->
+
+<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="stylesheets/ie8.css" rel="stylesheet">
+   <![endif]-->
+  
+<script type="text/javascript">
+      $(document).ready(function(){
+
+
+         $('.pmi').click(function(){
+
+          $('.nav').toggle(1000);
+
+
+        }).click();
+          
+
+
+        $(".role").change(function(){
+            $( "select option:selected").each(function(){
+                if($(this).attr("value")=="Producer/BeatMaker/Composer"){
+                  window.alert ("You should be a Producer OR BeatMaker OR Composer" )
+                    $(".Artist").show();
+                    $(".lft_part").show();
+                    
+                    
+                  }
+                if($(this).attr("value")=="MusicLover"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                     
+                }
+                if($(this).attr("value")=="DJ"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                    
+                }
+                  if($(this).attr("value")=="Singer"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                    
+                }
+
+                    if($(this).attr("value")=="Others"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                    
+                }
+
+
+            });
+        }).change();
+      
+    });
+
+
+
+
+</script>
+
+
+
+ 
+
+
+</head>
+
+
+<body>
+	
+     <%= yield %>
+
+<footer><!--footer section!-->
+    <div class="container">
+        <div class="row-fluid footer"><!--work area!-->
+            
+                <div class="span3"><!--left section!-->
+                    <h3>About Beatbucks</h3>
+                    <ul class="list">
+                        <li>About us</li>
+                        <li>Contact</li>
+                        <li>FAQ</li>
+                        <li>Terms of Service</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+         
+                </div><!--left section!-->
+                <div class="span3"><!--left1 section!-->
+                    <h3>make money</h3>
+                    <ul class="list">
+                        <li>Create an account</li>
+                        <li>License</li>
+                        <li>Sell beats</li>
+                        <li>Charts</li>
+                      
+                    </ul>
+                </div><!--left1 section!-->
+                <div class="span3"><!--right 1 section!-->
+                    <h3>Community</h3>
+                    <ul class="list list_new">
+  
+ <li> <%= link_to image_tag("f.png", :class => "facebook_icon", :alt => "Facebook"), "http://www.facebook.com/gkrishna.lagi", :target => "_blank" %>  Facebook</li>
+ <li> <%= link_to image_tag("t.png", :class => "facebook_icon", :alt => "Facebook"), "http://www.Twitter.com/smartbuzzgopi", :target => "_blank" %>  Twitter</li>
+
+                       <!-- add links to blog and google plaus-->
+
+
+                        <li><%= image_tag ("g.png") %> Google plus</li>
+                        <li><%= image_tag ("b.png") %> Blog</li>
+                      
+                    </ul>
+                </div><!--right 1 section!-->
+                <div class="span3"><!--right section!-->
+                    <h3>Languages</h3>
+                    <ul class="list">
+                        <li>English (EN)</li>
+                        <li>Français (FR)</li>
+                      
+                      
+                    </ul>
+                </div><!--right section!-->
+            
+        </div><!--work area!-->
+        
+        <div class="row-fluid copy_right">
+            
+                2014 Beatbucks.  All Rights Reserved to Mr.Stephene.
+           
+        </div>
+    </div>
+</footer><!--footer section!-->
+
+</body>
+
+</html>
+

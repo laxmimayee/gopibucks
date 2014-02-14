@@ -1,0 +1,77 @@
+
+ 
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+<div class="row-fluid">
+
+
+</div>
+
+<div class="container"><!--login box!-->
+	
+    <div class="row-fluid">
+    	
+        <div class="span3"></div>
+        
+        <div class="span6"><!--login box section!-->
+        	<div class="l_box">
+            	<div class="cancel"><%= link_to (image_tag ("close.png")),"/users/index" %></div>
+            	<h5>Already a member? <a href="/users/sign_up">REGISTER NOW</a></h5>
+
+
+                <div class="f_book"> <%= link_to (image_tag ("fb_login.png")), user_omniauth_authorize_path(:facebook) %> </div>
+
+
+
+
+
+                <div class="or"><!--or circle!-->
+                     <span>Or</span>
+                </div><!--or circle!-->
+                
+                <div class="f_book"  >
+                    <%= content_tag(:div, flash[:error], :id => "flash_error") if flash[:error] %>
+                    <%= content_tag(:div, flash[:notice], :id => "flash_notice") if flash[:notice] %>
+                    <%= content_tag(:div, flash[:alert], :id => "flash_alert") if flash[:alert] %>
+                 </div>
+                <div class="row-fluid l_new">
+                	<div class="span3"> <%= f.label :Email %> </div>
+                    <div class="span9">  <%= f.email_field :email, :autofocus => true  %> </div>
+                </div>
+                
+                <div class="row-fluid l_new">
+                	<div class="span3"> <%= f.label :password %> </div>
+                    <div class="span9"><%= f.password_field :password %></div>
+                </div>
+                
+                 <div class="row-fluid l_new">
+                	<div class="span3"> <%= f.label :remember_me %>  </div>
+                    <div class="span9">  
+                        <% if devise_mapping.rememberable? -%>
+                             <%= f.check_box :remember_me %>
+  								<% end -%>
+  							
+                    </div>
+                
+                 <div class="row-fluid l_new">
+                	 <%= f.submit "Log in" %> 
+                    </div>
+                 <div class="tab_sec"><!--tab section!-->
+                  <ul>
+                    <li> <%= link_to "Forgot your password?", new_password_path(resource_name) %> </li>
+                    <li>   
+                    <%= link_to "ReSend confirmation instructions?", new_confirmation_path(resource_name) %></li>
+                        <!-- <li> <%= render "devise/shared/links" %></li> -->
+                        
+                    </ul>
+                </div><!--tab section!-->
+                
+            </div>	
+        </div><!--login box section!-->
+        
+        <div class="span3"></div>
+        
+    </div>
+    
+</div><!--login box!-->
+<% end %>

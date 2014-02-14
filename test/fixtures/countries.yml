@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cname: MyString
+  ccode: MyString
+  ccurrency: MyString
+
+two:
+  cname: MyString
+  ccode: MyString
+  ccurrency: MyString

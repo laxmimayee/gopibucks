@@ -1,0 +1,212 @@
+<head>
+
+
+<script type="text/javascript">
+     $(document).ready(function(){
+     $(".submit").click(function(){
+                 
+                  alert( "Please Check YOur mail and Confirm your account" );
+         
+         
+        }).click();
+ 
+
+        $(".role").change(function(){
+            $( "select option:selected").each(function(){
+                if($(this).attr("value")=="Producer/BeatMaker/Composer"){
+                  window.alert ("You should be a Producer OR BeatMaker OR Composer" )
+                    $(".Artist").show();
+                    $(".lft_part").show();
+                    
+                    
+                  }
+                if($(this).attr("value")=="MusicLover"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                     
+                }
+                if($(this).attr("value")=="DJ"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                    
+                }
+              if($(this).attr("value")=="Singer"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                    
+                }
+
+        if($(this).attr("value")=="Others"){
+                    $(".Artist").hide();
+                    $(".lft_part").hide();
+                    
+                }
+
+
+            });
+        }).change();
+
+ 
+
+$("#country").change(function() {
+
+alert("sdfdfds")
+
+
+});
+ 
+
+    });
+  
+
+  
+
+</script>
+
+
+
+
+
+
+
+</head>
+<header class="container"><!--header section!-->
+</header><!--header section!-->
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+     
+
+ 
+
+
+<div class="container"><!--container part-->
+  <div class="row-fluid join">
+      <div class="span3"><!--left section!-->
+          <div class="lft_part">
+              <h3>PRODUCER ACCOUNT</h3>
+                
+                <h2>free*</h2>
+                <p><strong>12 Beats*</strong> (.wav format)</p>
+                <p><strong>5 GB</strong> of Track outs storage</p>
+                <p>Embed your store anywhere<span>Your Website, Your Soundclick page, etc.</span></p>
+                <p>Create Sound Packs<span>Select your beats, sell them in bulk</span></p>
+                <p>Transaction <strong>fee: 28%</strong> </p>
+                <em>* Free until beta period is over</em>
+            </div>
+        </div><!--left section!-->
+
+
+
+        <div class="span4"><!--right section!-->
+          <div class="join_rt"><!--join right section!-->
+              <h2>Sign up on Beatbucks<span>Already a member? <%= link_to('Login',"#",:id =>"login")   %>    </a></span></h2>
+               <div class="dis_info">
+                <div class="role" >   
+                <%= f.label :"Are You A" %>
+                <%= f.select :Role, options_for_select(%w[ MusicLover Producer/BeatMaker/Composer   DJ Singer Others ]) %>
+                 </div>
+               </div>
+
+               <div class= "Artist" >
+               <div class="dis_info">
+                <%= f.label :"Artist Name or Stage Name" %>
+                <%= f.text_field :ArtistName , :placeholder => "Enter the Artist Name"%>
+              </div>
+                <div id="country" name ="country" >
+                <div class="dis_info">
+                  <div class="country-sec">
+                <!-- add jquery/country selection -->
+                <%= f.label :Country %>
+
+                <%= f.select :Country, Countries.all.collect {|l| [ l.cname  ] },{:onchange => '$.get("/populate_projects")'}%>
+                <%#= f.text_field :Country %>
+              <%#= f.select :Country, options_for_select([  ])onchange="print_state('state',this.selectedIndex);" %>
+     <!--          <select onchange="print_state('state',this.selectedIndex);" id="country" name ="users[Country]">
+<option >Select Country</option>
+</select> -->
+            </div>
+          </div>
+                <%#= f.country_select :Country %>
+                <div name ="state" id ="state" >
+                <div class="country-sec">
+                <%= f.label :State %>
+
+                <%= f.select :StateProvince, State.all.collect {|l| [  l.name,l.countries_id  ] } %>
+
+                <%#= f.text_field :Country %>
+              <%#= f.select :StateProvince   %>
+              <!-- <select name ="users[StateProvince]" id ="state">
+                <option >Select State</option>
+                </select> -->
+
+
+                 </div>
+               </div>
+
+
+                </div>
+              </div>
+
+                <!-- Use my info from: <%= link_to image_tag("fb.png", :class => "facebook_icon", :alt => "Facebook"), user_omniauth_authorize_path(:facebook) %> -->
+
+                <%#= image_tag("fb.png") %>
+                 <div class="dis_info">
+                  <div class="country-sec">
+                <%= f.label :Firstname %>
+               <%= f.text_field :Firstname, :autofocus => true, :placeholder => "Not More than 25 Charectors" %>
+                 </div>
+                 <div class="country-sec">
+                <%= f.label :Lastname %>
+                <%= f.text_field :Lastname , :placeholder => "Not More than 25 Charectors"%>
+              </div>
+                </div>
+
+
+
+                <%= f.label :"Email address" %>
+                <%= f.email_field :email, :placeholder => "Enter a Valid Email ID "  %>
+ 
+                  <div class="dis_info">
+                  <div class="country-sec">
+                <%= f.label :"Choose password" %>
+                <%= f.password_field :password,:placeholder => "Enter at least 8 charectors " %>
+                  </div>
+
+                  <div class="country-sec">
+                <%= f.label :"Re-type password" %>
+                <%= f.password_field :password_confirmation,:placeholder => "Re enter your Password " %>
+                  </div>
+                </div>
+                
+                <!-- add  selection list -->
+                <!--<%= f.label :"How did you hear about us" %>
+                <%= f.text_field :Howdouknow %> -->
+ 
+     <%= f.check_box :Terms %> <span>I have read and accept the Beatbucks Terms of Service.</span> 
+                
+
+              <div class = "submit">
+               
+                <%= f.submit "I'M DONE" %>
+                
+              </div>
+             
+            </div><!--join right section!-->
+        </div><!--right section!-->
+        <div class="span4"> 
+            <div class = "right_sec" , style="margin-top: 220px;background-color:#fff; box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5); color: red ", postion = "absolute">
+       
+         <%= devise_error_messages! %>
+           
+
+     </div>
+     </div>
+    </div>
+
+  <script>
+
+$('#login').colorbox({href:"/users/sign_in"})
+</script>
+ 
+</div><!--container part-->
+<% end %>

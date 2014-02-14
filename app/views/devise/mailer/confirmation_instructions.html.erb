@@ -1,0 +1,44 @@
+	<!-- <p> Hello <%= @email %> Welcome To Beat Bucks !</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><%= link_to 'Confirm my account', user_confirmation_url( :confirmation_token => @token) %></p>
+ -->
+
+
+
+<body>
+
+
+<table width="96%" border="0" cellspacing="0" cellpadding="7" align="center">
+  <tr style="border-bottom:solid 1px #d2d2d2;">
+    <td width="48%"> <%= image_tag ("logo.png") %> </td>
+    <td width="52%" style="font:normal 18px Verdana, Helvetica, sans-serif; color:#444; text-align:right;">New Registration</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="font:normal 14px Verdana, Geneva, sans-serif; color:#444;"> Dear 
+    	<%= @resource.Firstname%> Thanks for joining Beatbucks!<br /> To finish your registration, there is one more quick step: Please Click the 'Confirm my account' Link Below	</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2"> <%= link_to 'Confirm my account', user_confirmation_url( :confirmation_token => @token) %></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="font:normal 14px Verdana, Geneva, sans-serif; color:#444;">Once verified, you'll be all set to start using Beatbucks.</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="font:normal 14px Verdana, Geneva, sans-serif; color:#444;">Sincerely,<br />Beatbucks Team <br /><a href="#" style="font:normal 14px Arial, Helvetica, sans-serif; color:#0088CC;">www.beatbucks.com</a></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="7" style="border-top:dashed 1px #d2d2d2;">
+          <tr>
+            <td width="31%"><a href="#" style="font:normal 11px Verdana, Helvetica, sans-serif; color:#c9c9c9; text-decoration:underline; border-right:dolid 1px #c9c9c9; padding:0 10px 0 0;">Help</a> <a href="#" style="font:normal 11px Verdana, Helvetica, sans-serif; color:#c9c9c9; text-decoration:underline; padding:0 0 0 10px;">Contact us</a></td>
+            <td width="27%" style="font:normal 11px Verdana, Helvetica, sans-serif; text-align:center; color:#c9c9c9;">Please do not reply to this email.</td>
+            <td width="42%" align="right"><%= image_tag('ff.png')%> <%= image_tag('gg.png') %> <%= image_tag('yy.png') %></td>
+          </tr>
+        </table>
+
+    </td>
+  </tr>
+</table>

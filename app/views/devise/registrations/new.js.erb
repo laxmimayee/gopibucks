@@ -1,0 +1,10 @@
+ function user_new(value){
+  // alert(value);
+  $.ajax({
+    type: "GET",
+    url: "/user_new",
+    data:{
+      FirstName  : value
+    }
+    
+  });

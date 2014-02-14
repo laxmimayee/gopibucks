@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beatbucks</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+ <script type="text/javascript">
+      
+
+</script>
+ 
+<!-- <link rel="stylesheet" type="text/css" media="all" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/custom.css">
+ -->
+
+
+<!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <link href="stylesheets/ie8.css" rel="stylesheet">
+   <![endif]-->
+</head>
+
+
+<body>
+    <header class="container"><!--header section!--><% if user_signed_in? %> 
+       <% if current_user.Role == 'Producer/BeatMaker/Composer' %>
+        
+          <%= render :partial => 'layouts/logged' %>
+         <% end %>
+                                     <% end %> 
+  </div>
+
+    <section class="raw-fluid b_bar"><!--black bar !-->
+
+        <div class="span3 browse"><!--browse section!-->
+            <ul>
+                <li><a href="#">Browse  <%= image_tag ("down-arrow.png") %></a></li>
+                            </ul>
+            
+        </div><!--browse section!-->
+       
+            
+       
+        
+        <div class="span5 logo"><!--logo section!-->
+            <%= image_tag ("logo.png") %>
+           
+        </div><!--logo section!-->
+        
+        <div class="span4  browse"><!--login!-->
+
+         
+                           <span style='margin:5px 0 0 0;'> <% if user_signed_in? %> 
+
+                                      <% if current_user.Role == 'Producer/BeatMaker/Composer' %>
+                                          <%= current_user.Firstname %> 
+                                            
+                                          <%= image_tag ("menu-arrow.png"), :class=> "pmi" %>
+                                          
+                                            
+                                          
+                                          <% else %>   
+                                          
+                                          <%= current_user.Firstname %>     
+                                          <%= link_to('Logout', destroy_user_session_path, :method => :delete)%>    
+                                          <a href= "/users/edit" class="join"> Edit Details</a>
+                                            <% end %>  
+                                  <% else %>
+                  
+                        <%= link_to('Login', new_user_session_path)   %>  
+
+                  
+                        </span>
+         <a href= "/users/sign_up" class="join" style='margin:5px 5px 0 5px;'>Join</a>
+        </div><!--login!-->
+        
+        
+        <% end %>
+
+        <div class="span1 menu_arrow"> </div>
+    </section><!--black bar !-->
+
+</header><!--header section!-->
+
+
+
+
+<div class="container"><!--container part-->
+    
+    <div class="row-fluid main_con"><!--main con!-->
+        
+       <div class="span3"><!---left section!-->
+            <div class="left_sec">
+                <h3>Featured Beats/Packs</h3>
+                <div class="img_box"><!--image box!-->
+                    <em>Prayers <br /> by <span>JOEL</span></em>
+
+                    <%= image_tag ("i1.png") %> 
+
+                    <div class="pagi"><%= image_tag ("active.png" ) %>  <%= image_tag ("u-active.png" )%> </div>
+                </div><!--image box!-->
+                
+                <h3>Featured Beats/Packs</h3>
+                <div class="img_box"><!--image box!-->
+                    <em><span>FLOSSTRADAMUS</span></em>
+                    <%= image_tag ("feature.png") %>
+                    <div class="pagi"> <%= image_tag ("active.png") %> <%= image_tag ("u-active.png" )%></div>
+                </div><!--image box!-->
+                
+                  <h3>tag cloud</h3>
+                <div class="img_box"><!--image box!-->
+                    
+                    <%= image_tag ("tag_cloud.png") %>
+                   
+                </div><!--image box!-->
+                
+            </div>
+       </div><!---left section!-->
+       
+       <div class="span6 bdr"><!--middle section!-->
+            
+           <div class="row-fluid" >
+
+            <h3> Available Users For Now / All Beat packs will be Displayed </h3>
+                <% @users.each do |u| %>
+                <%= u.email %> as ==> <%= u.Role %> </br>
+                <% end %>
+					</div>
+
+            
+        </div>
+        <div class="span3"></div>    
+           
+</div><!--container part-->
+
+
+
+<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" language="javascript" charset="utf-8" src="js/jquery.min.js"></script> -->
+</body>
+
+</html>
+
+
+
+
+
