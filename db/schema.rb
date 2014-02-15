@@ -11,12 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140214125608) do
+ActiveRecord::Schema.define(version: 20140215082153) do
 
   create_table "countries", force: true do |t|
-    t.string   "cname"
-    t.string   "ccode"
-    t.string   "ccurrency"
+    t.string   "name"
+    t.string   "code"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,7 +53,7 @@ ActiveRecord::Schema.define(version: 20140214125608) do
   create_table "states", force: true do |t|
     t.string   "name"
     t.string   "iso"
-    t.integer  "countries_id"
+    t.integer  "country_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

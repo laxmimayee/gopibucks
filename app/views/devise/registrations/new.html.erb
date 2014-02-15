@@ -50,10 +50,21 @@
 
 $("#country").change(function() {
 
-alert("sdfdfds")
+$('#state').parent().hide()
+states=$('#state').html()
+$('#country').change
+country = $('country:selected').text()
+options=$(states).filter("optgroupe[label='#{country}']").hrml()
+
+if options
+  $('#state_id').html(options)
+  $('#state').parent().show()
+else
+$('#state').empty()
+$('#state').parent().hide()
 
 
-});
+}).change();
  
 
     });
@@ -112,32 +123,43 @@ alert("sdfdfds")
                 <%= f.label :"Artist Name or Stage Name" %>
                 <%= f.text_field :ArtistName , :placeholder => "Enter the Artist Name"%>
               </div>
-                <div id="country" name ="country" >
-                <div class="dis_info">
-                  <div class="country-sec">
-                <!-- add jquery/country selection -->
-                <%= f.label :Country %>
+              <div class="dis_info">
 
-                <%= f.select :Country, Countries.all.collect {|l| [ l.cname  ] },{:onchange => '$.get("/populate_projects")'}%>
+                <div class="country-sec">
+                <div id="country" name ="country" >
+                
+                  
+                <!-- add jquery/country selection -->
+                <%= f.label :Countries_id %>
+
+                <%#= f.select :Country, options_from_collection_for_select(Countries.all, :id, :name) %>
+
+                <%= f.collection_select :Country, Country.order(:name), :id, :name, include_blank:true %>
+
+                <%#= f.select :Country, Countries.all.collect {|l| [ l.cname  ] },{:onchange => '$.get("/countries_states")'}%>
                 <%#= f.text_field :Country %>
               <%#= f.select :Country, options_for_select([  ])onchange="print_state('state',this.selectedIndex);" %>
-     <!--          <select onchange="print_state('state',this.selectedIndex);" id="country" name ="users[Country]">
+      <!--  <select onchange="print_state('state',this.selectedIndex);" id="country" name ="user[Country]">
 <option >Select Country</option>
-</select> -->
+</select>  -->
             </div>
           </div>
                 <%#= f.country_select :Country %>
+                 <div class="country-sec">
                 <div name ="state" id ="state" >
-                <div class="country-sec">
-                <%= f.label :State %>
+               
+                <%= f.label :State_id, :StateProvince %>
+                
+                <%#= f.grouped_collection_select :StateProvince, Country.order(:name),:states, :name,:id %>
+                 
 
-                <%= f.select :StateProvince, State.all.collect {|l| [  l.name,l.countries_id  ] } %>
+                <%#= f.select :StateProvince, State.all.collect {|l| [  l.name,l.country_id  ] } %>
 
                 <%#= f.text_field :Country %>
               <%#= f.select :StateProvince   %>
-              <!-- <select name ="users[StateProvince]" id ="state">
+            <!--    <select name ="user[StateProvince]" id ="state">
                 <option >Select State</option>
-                </select> -->
+                </select>  -->
 
 
                  </div>
