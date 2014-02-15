@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"tr",
+				"true"
+			],
+			[
+				"Country",
+				"country_id"
+			],
+			[
+				"stat",
+				"State_id"
+			],
+			[
+				"State",
+				"StateProvince"
+			],
+			[
+				"Countries",
+				"Countries_id"
+			],
+			[
+				"user",
+				"current_user"
+			],
+			[
 				"cl",
 				"click"
 			],
@@ -26,60 +50,56 @@
 			[
 				"redirec",
 				"redirect_to"
-			],
-			[
-				"user",
-				"users"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/views/devise/registrations/edit.html.erb",
+			"file": "app/views/devise/registrations/new.html.erb",
 			"settings":
 			{
-				"buffer_size": 7278,
+				"buffer_size": 7160,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/routes.rb",
+			"file": "db/seeds.rb",
 			"settings":
 			{
-				"buffer_size": 1717,
+				"buffer_size": 299866,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/users/basicinfo1.html.erb",
+			"file": "app/models/country.rb",
 			"settings":
 			{
-				"buffer_size": 3043,
+				"buffer_size": 174,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/users/index.html.erb",
+			"file": "app/assets/javascripts/registrations.js.coffee",
 			"settings":
 			{
-				"buffer_size": 5403,
+				"buffer_size": 600,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/application_controller.rb",
+			"file": "app/assets/javascripts/users.js.coffee",
 			"settings":
 			{
-				"buffer_size": 1413,
+				"buffer_size": 615,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/layouts/_basicinfo.html.erb",
+			"file": "app/models/state.rb",
 			"settings":
 			{
-				"buffer_size": 2863,
+				"buffer_size": 143,
 				"line_ending": "Unix"
 			}
 		},
@@ -87,63 +107,7 @@
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 4704,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/user.rb",
-			"settings":
-			{
-				"buffer_size": 2651,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/devise/registrations/new.html.erb",
-			"settings":
-			{
-				"buffer_size": 5388,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/smartbuzz/Downloads/countries/country.html",
-			"settings":
-			{
-				"buffer_size": 949,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/controllers/users_controller.rb",
-			"settings":
-			{
-				"buffer_size": 958,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/home_controller.rb",
-			"settings":
-			{
-				"buffer_size": 124,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/devise/mailer/confirmation_instructions.html.erb",
-			"settings":
-			{
-				"buffer_size": 2246,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/devise/sessions/new.html.erb",
-			"settings":
-			{
-				"buffer_size": 2792,
+				"buffer_size": 4727,
 				"line_ending": "Unix"
 			}
 		}
@@ -172,8 +136,48 @@
 	},
 	"file_history":
 	[
-		"/run/user/smartbuzz/gvfs/smb-share:server=phpserver,share=html/beatbucks/dev/html/join-new.html",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/registrations_controller.rb",
+		"/home/smartbuzz/Gopi/Desktop/Untitled Folder/bodyRyzm/support-loadings/collage-master/app/views/marks/enter_marks_form.html.erb~",
+		"/home/smartbuzz/Desktop/Beatbucks/db/migrate/20140215082153_rename_state_countries_country_id.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/models/countries.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/users_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/models/state.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/application.html.erb",
 		"/home/smartbuzz/Downloads/countries/country.html",
+		"/home/smartbuzz/Desktop/Beatbucks/config/routes.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/sessions/new.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/models/country.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/registrations/new.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/db/seeds.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/db/migrate/20140214125608_create_states.rb",
+		"/home/smartbuzz/Desktop/development.rb~",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/registrations/update.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/application.js",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/bootstrap.min.js",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/jquery.min.js",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/registrations/edit.html.erb",
+		"/home/smartbuzz/Downloads/countries/countries.js",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/registrations/_subregion_select.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/models/user.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/application_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/Gemfile",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/users.js.coffee",
+		"/home/smartbuzz/Downloads/countries/style.css",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/registrations.js.coffee",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/users/_subregion_select.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/db/migrate/20140214050531_add_columns_country_state_code_users.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_subregion_select.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/countries.js",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_basicinfo1.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_basicinfo.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/users/index.html.erb",
+		"/run/user/smartbuzz/gvfs/smb-share:server=phpserver,share=html/beatbucks/dev/html/join-new.html",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_logged.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets/custom.css",
+		"/run/user/smartbuzz/gvfs/smb-share:server=phpserver,share=html/beatbucks/dev/html/css/custom.css",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/mailer/confirmation_instructions.html.erb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/home_controller.rb",
+		"/home/smartbuzz/Desktop/Beatbucks/app/views/users/basicinfo1.html.erb",
 		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/devise/confirmations_controller.rb",
 		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/devise/omniauth_callbacks_controller.rb",
 		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/devise/passwords_controller.rb",
@@ -184,42 +188,25 @@
 		"/home/smartbuzz/Desktop/Beatbucks/app/views/home/edit.html.erb",
 		"/home/smartbuzz/Desktop/French-English words~",
 		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/jquery.validate.js",
-		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/jquery.min.js",
-		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/sessions/new.html.erb",
 		"/home/smartbuzz/.rvm/gems/ruby-2.0.0-p353/bundler/gems/paperclip-81669c11dee0/lib/paperclip/attachment.rb",
-		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/application_controller.rb",
 		"/home/smartbuzz/Desktop/Beatbucks/config/environments/development.rb",
 		"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets/colorbox.css",
-		"/home/smartbuzz/Desktop/Beatbucks/app/models/user.rb",
-		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/registrations/new.html.erb",
 		"/home/smartbuzz/Desktop/html/socialnetwork.html",
-		"/home/smartbuzz/Desktop/Beatbucks/Gemfile",
-		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/application.html.erb",
-		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_basicinfo1.html.erb",
 		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/basicinfo1.html.erb",
-		"/home/smartbuzz/Desktop/Beatbucks/app/views/users/index.html.erb",
-		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_basicinfo.html.erb",
-		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/mailer/confirmation_instructions.html.erb",
 		"/home/smartbuzz/Desktop/Beatbucks/config/initializers/devise.rb",
 		"/home/smartbuzz/Desktop/Beatbucks/app/helpers/users_helper.rb",
 		"/home/smartbuzz/Desktop/Beatbucks/config/locales/devise.en.yml",
 		"/home/smartbuzz/Desktop/html/css/custom.css",
-		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/users_controller.rb",
-		"/home/smartbuzz/Desktop/Beatbucks/app/views/layouts/_logged.html.erb",
-		"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts/application.js",
 		"/home/smartbuzz/Desktop/index.html.erb",
 		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/registrations/new.js.erb",
 		"/home/smartbuzz/Desktop/Beatbucks/config/initializers/client_side_validations.rb",
 		"/home/smartbuzz/Downloads/rails4_client_side_validations-0.0.3.gem_FILES/metadata",
 		"/home/smartbuzz/Desktop/ol/app/views/devise/registrations/new.html.erb",
 		"/home/smartbuzz/Desktop/Beatbucks/config/application.rb",
-		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/registrations/edit.html.erb",
 		"/home/smartbuzz/Desktop/BeatBucks/db/migrate/20140130082145_countries.rb~",
-		"/home/smartbuzz/Desktop/Beatbucks/config/routes.rb",
 		"/home/smartbuzz/Desktop/Beatbucks/app/views/devise/passwords/edit.html.erb",
 		"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets/application.css",
 		"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets/bootstrap.css",
-		"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets/custom.css",
 		"/home/smartbuzz/Desktop/Beatbucks/app/views/users/loginModal.html.erb",
 		"/home/smartbuzz/Desktop/Beatbucks/Beatbucks.sublime-workspace",
 		"/home/smartbuzz/Desktop/Beatbucks/app/controllers/producers_controller.rb",
@@ -241,9 +228,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/home/smartbuzz/Desktop/Beatbucks/app/assets/javascripts",
 			"/home/smartbuzz/Desktop/Beatbucks",
 			"/home/smartbuzz/Desktop/Beatbucks/app/assets/stylesheets",
 			"/home/smartbuzz/Desktop/Beatbucks",
@@ -256,6 +244,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ccode",
+			"cname",
+			"Countries",
+			"defaultPrevented",
+			"src.defaultPrevented",
+			"defaultPrevented",
+			"src.defaultPrevented",
+			"profile",
+			"<a",
 			"(function( window, undefined ) {",
 			"onload",
 			"validation",
@@ -282,11 +279,14 @@
 			"navigation"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
 		[
+			"code",
+			"name",
+			"Country"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -297,23 +297,23 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/devise/registrations/edit.html.erb",
+					"file": "app/views/devise/registrations/new.html.erb",
 					"settings":
 					{
-						"buffer_size": 7278,
+						"buffer_size": 7160,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6541,
-								6541
+								1412,
+								1412
 							]
 						],
 						"settings":
@@ -323,303 +323,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2703.0,
+						"translation.y": 714.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "config/routes.rb",
+					"file": "db/seeds.rb",
 					"settings":
 					{
-						"buffer_size": 1717,
+						"buffer_size": 299866,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								796,
-								796
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views/users/basicinfo1.html.erb",
-					"settings":
-					{
-						"buffer_size": 3043,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1016,
-								1016
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/views/users/index.html.erb",
-					"settings":
-					{
-						"buffer_size": 5403,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								629,
-								629
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/controllers/application_controller.rb",
-					"settings":
-					{
-						"buffer_size": 1413,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								863,
-								863
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/views/layouts/_basicinfo.html.erb",
-					"settings":
-					{
-						"buffer_size": 2863,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1615,
-								1615
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 357.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/views/layouts/application.html.erb",
-					"settings":
-					{
-						"buffer_size": 4704,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1052,
-								1052
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/models/user.rb",
-					"settings":
-					{
-						"buffer_size": 2651,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1380,
-								1380
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 93.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/views/devise/registrations/new.html.erb",
-					"settings":
-					{
-						"buffer_size": 5388,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2402,
-								2402
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 548.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "/home/smartbuzz/Downloads/countries/country.html",
-					"settings":
-					{
-						"buffer_size": 949,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								642,
-								642
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "app/controllers/users_controller.rb",
-					"settings":
-					{
-						"buffer_size": 958,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								583,
-								583
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 51.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "app/controllers/home_controller.rb",
-					"settings":
-					{
-						"buffer_size": 124,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								118,
-								118
+								5716,
+								5716
 							]
 						],
 						"settings":
@@ -633,26 +355,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "app/views/devise/mailer/confirmation_instructions.html.erb",
+					"buffer": 2,
+					"file": "app/models/country.rb",
 					"settings":
 					{
-						"buffer_size": 2246,
+						"buffer_size": 174,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								538,
-								538
+								174,
+								174
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -661,19 +381,97 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "app/views/devise/sessions/new.html.erb",
+					"buffer": 3,
+					"file": "app/assets/javascripts/registrations.js.coffee",
 					"settings":
 					{
-						"buffer_size": 2792,
+						"buffer_size": 600,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								128,
-								128
+								212,
+								212
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/assets/javascripts/users.js.coffee",
+					"settings":
+					{
+						"buffer_size": 615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								615,
+								615
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/models/state.rb",
+					"settings":
+					{
+						"buffer_size": 143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/layouts/application.html.erb",
+					"settings":
+					{
+						"buffer_size": 4727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								624,
+								624
 							]
 						],
 						"settings":
@@ -724,7 +522,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 0.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":

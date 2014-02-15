@@ -46,29 +46,8 @@
             });
         }).change();
 
- 
-
-$("#country").change(function() {
-
-$('#state').parent().hide()
-states=$('#state').html()
-$('#country').change
-country = $('country:selected').text()
-options=$(states).filter("optgroupe[label='#{country}']").hrml()
-
-if options
-  $('#state_id').html(options)
-  $('#state').parent().show()
-else
-$('#state').empty()
-$('#state').parent().hide()
-
-
-}).change();
- 
-
-    });
   
+
 
   
 
@@ -134,7 +113,7 @@ $('#state').parent().hide()
 
                 <%#= f.select :Country, options_from_collection_for_select(Countries.all, :id, :name) %>
 
-                <%= f.collection_select :Country, Country.order(:name), :id, :name, include_blank:true %>
+                <%= f.collection_select :Country, Country.order(:name), :id, :name,{:include_blank=> "Select a Country"} %>
 
                 <%#= f.select :Country, Countries.all.collect {|l| [ l.cname  ] },{:onchange => '$.get("/countries_states")'}%>
                 <%#= f.text_field :Country %>
@@ -150,8 +129,8 @@ $('#state').parent().hide()
                
                 <%= f.label :State_id, :StateProvince %>
                 
-                <%#= f.grouped_collection_select :StateProvince, Country.order(:name),:states, :name,:id %>
-                 
+                <%#= f.grouped_collection_select :StateProvince, Country.order(:name),:states, :name,:id  %>
+                <%= f.grouped_collection_select :StateProvince, Country.order(:name), :states, :name, :id, :name, {:include_blank=> "Select a City"}  %>
 
                 <%#= f.select :StateProvince, State.all.collect {|l| [  l.name,l.country_id  ] } %>
 
@@ -169,7 +148,7 @@ $('#state').parent().hide()
                 </div>
               </div>
 
-                <!-- Use my info from: <%= link_to image_tag("fb.png", :class => "facebook_icon", :alt => "Facebook"), user_omniauth_authorize_path(:facebook) %> -->
+                
 
                 <%#= image_tag("fb.png") %>
                  <div class="dis_info">
