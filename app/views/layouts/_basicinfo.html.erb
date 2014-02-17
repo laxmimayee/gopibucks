@@ -41,7 +41,7 @@
 
                 <!-- add jquery/country selection -->
                 <%= f.label :Country %>
-                <%= f.select :Country, Countries.all.collect {|l| [ l.cname  ] } %>
+                <%= f.select :Country, Countries.all.collect {|l| [ l.name  ] } %>
                 <%#= f.text_field :Country %>
 
                 <%= f.label :"Email address" %>

@@ -5,6 +5,7 @@ gem 'omniauth-facebook'
 gem 'protected_attributes'
 gem "jquery-validation-rails"
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 

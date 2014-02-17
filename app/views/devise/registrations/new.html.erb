@@ -2,14 +2,27 @@
 
 
 <script type="text/javascript">
-     $(document).ready(function(){
-     $(".submit").click(function(){
-                 
-                  alert( "Please Check YOur mail and Confirm your account" );
-         
-         
-        }).click();
- 
+     
+$(document).ready(function(){
+
+   /* var states = $('#user_StateProvince').html();
+          $('#user_Country', this).bind('change',function() {
+          var  countrySelected = $('#user_Country:selected').val();
+        var options = $(states).find("optgroup[label='" + countrySelected + "']").html();
+       if (options)
+       {
+          $('#user_StateProvince select').html(options);
+          return $('#user_StateProvince').parent().parent();
+        }
+        else
+        {
+          $('#user_StateProvince').empty();
+        }
+        });
+*/
+
+
+     
 
         $(".role").change(function(){
             $( "select option:selected").each(function(){
@@ -46,7 +59,19 @@
             });
         }).change();
 
-  
+
+$(".submit").click(function(){
+                 
+                  alert( "Please Check YOur mail and Confirm your account" );
+         
+         
+        }).click();
+ 
+ 
+
+ 
+
+  });
 
 
   
@@ -67,8 +92,6 @@
      
 
  
-
-
 <div class="container"><!--container part-->
   <div class="row-fluid join">
       <div class="span3"><!--left section!-->
@@ -105,17 +128,17 @@
               <div class="dis_info">
 
                 <div class="country-sec">
-                <div id="country" name ="country" >
+                <div id="country_id" name ="country_id" >
                 
-                  
+              
                 <!-- add jquery/country selection -->
                 <%= f.label :Countries_id %>
-
+                   
                 <%#= f.select :Country, options_from_collection_for_select(Countries.all, :id, :name) %>
 
                 <%= f.collection_select :Country, Country.order(:name), :id, :name,{:include_blank=> "Select a Country"} %>
 
-                <%#= f.select :Country, Countries.all.collect {|l| [ l.cname  ] },{:onchange => '$.get("/countries_states")'}%>
+                <%#= f.select :Country, Countries.all.collect {|l| [ l.name  ] } %>
                 <%#= f.text_field :Country %>
               <%#= f.select :Country, options_for_select([  ])onchange="print_state('state',this.selectedIndex);" %>
       <!--  <select onchange="print_state('state',this.selectedIndex);" id="country" name ="user[Country]">
@@ -125,11 +148,11 @@
           </div>
                 <%#= f.country_select :Country %>
                  <div class="country-sec">
-                <div name ="state" id ="state" >
-               
-                <%= f.label :State_id, :StateProvince %>
                 
-                <%#= f.grouped_collection_select :StateProvince, Country.order(:name),:states, :name,:id  %>
+               
+               
+                
+                <%= f.label :StateProvince %>
                 <%= f.grouped_collection_select :StateProvince, Country.order(:name), :states, :name, :id, :name, {:include_blank=> "Select a City"}  %>
 
                 <%#= f.select :StateProvince, State.all.collect {|l| [  l.name,l.country_id  ] } %>
@@ -141,7 +164,7 @@
                 </select>  -->
 
 
-                 </div>
+                  
                </div>
 
 
@@ -209,5 +232,17 @@
 $('#login').colorbox({href:"/users/sign_in"})
 </script>
  
+
+
+
+
+
+
+
+
+
+
+
+
 </div><!--container part-->
 <% end %>

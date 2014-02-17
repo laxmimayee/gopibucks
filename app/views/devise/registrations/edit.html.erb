@@ -4,6 +4,15 @@
      
 $(document).ready(function(){
 
+
+         $('.pmi').click(function(){
+
+          $('.nav').toggle(1000);
+
+
+        }).click();
+
+
         $(".role").change(function(){
             $( "select option:selected").each(function(){
                 if($(this).attr("value")=="Producer/BeatMaker/Composer"){
@@ -62,11 +71,6 @@ $(document).ready(function(){
 <title>Producers Page</title>
 
 
- 
-
-  
-
-
 </head>
 
 
@@ -79,7 +83,7 @@ $(document).ready(function(){
       <div class="span3 center"><%= image_tag("logo.png") %></div>
         <div class="span3"></div>
         <div class="span2 ad_track"><%= image_tag("plus.png") %> Add New Track</div>
-        <div class="span3"><div class="p_name"><%=  image_tag (@current_user.pimage),:style => "max-width:25%;border 1px solid #00000;" %> <%= current_user.ArtistName %> </div></div>
+        <div class="span3"><div class="p_name"><%=  image_tag (@current_user.pimage),:style => "max-width:25%; height:25px;border 1px solid #00000; padding:2px" %><%= current_user.ArtistName %> </div></div>
         <div class="span1 menu_arrow"><span><%= image_tag("menu-arrow.png", :class=> "pmi") %></span></div>
     </section><!--black bar !-->
 
@@ -154,8 +158,8 @@ $(document).ready(function(){
               <div class="row-fluid form_sec"><!--form raw !-->
                     <div class="span2"> <%= f.label :"HomeTown" %></div>
                     <div class="span4"><%= f.text_field :HomeTown %></div>  
-                    <div class="span3"> <%= f.select :Country, Countries.all.collect {|l| [ l.cname  ] } %></div>
-                    <div class="span2"><select><option></option></select></div> <!-- add a feild for State Code !-->
+                    <div class="span3"> <%= f.collection_select :Country, Country.order(:name), :id, :name,{:include_blank=> "Select a Country"} %> </div> <!-- add a feild for Country Code !-->
+                    <div class="span2">  <%= f.grouped_collection_select :StateProvince, Country.order(:name), :states, :name, :id, :name, {:include_blank=> "Select a City"}  %>   </div> <!-- add a feild for State Code !-->
                     <div class="span1"></div>
                </div><!--form raw !-->
                 
