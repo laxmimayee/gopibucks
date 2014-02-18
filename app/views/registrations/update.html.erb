@@ -47,11 +47,25 @@ $(document).ready(function(){
 
             });
         }).change();
-
- 
-          
+  
 
     });
+
+ function state_cod(){ 
+    alert(" Please Select State code");
+    $.ajax({
+      type: 'GET',
+      url: "/home/state_codes",
+      data: {
+        'country' : $("#user_Country").val()
+      }
+    }).done(function(text) {
+      $('#user_statecode').empty().append(text);
+    });
+  }
+
+
+
 
 
 </script>
@@ -163,8 +177,22 @@ $(document).ready(function(){
               <div class="row-fluid form_sec"><!--form raw !-->
                     <div class="span2"> <%= f.label :"HomeTown" %></div>
                     <div class="span4"><%= f.text_field :HomeTown %></div>  
-                    <div class="span3"> <%= f.select :Country, Countries.all.collect {|l| [ l.cname  ] } %></div>
-                    <div class="span2"><select><option></option></select></div> <!-- add a feild for State Code !-->
+                    <div class="span3"> 
+
+                       <div id="country_id" name ="country_id" >
+                      <%= f.select :Country, Country.all.collect {|s| [s.name,s.code]},{:prompt=>"Select Country"},:onchange=>"state_cod()"%>
+
+                    </div>
+
+
+                    </div>
+                    <div class="span2">
+                      <div name ="statecode" id ="statecode" >
+
+                        <%= f.label  :state_code %>
+                        <%=f.select :state_code, {},:prompt=>"Select State"%>
+
+                    </div> <!-- add a feild for State Code !-->
                     <div class="span1"></div>
                </div><!--form raw !-->
                 

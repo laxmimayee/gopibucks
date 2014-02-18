@@ -11,7 +11,7 @@ validates_attachment_content_type :pimage, :content_type => /^image\/(jpg|jpeg|p
 #validates_attachment_content_type :pimage_file_name , :pimage_content_type  => %w(image/jpeg image/jpg image/png)
  devise :database_authenticatable, :registerable,:confirmable, :recoverable, :rememberable, :trackable, :omniauthable,:validatable,:omniauth_providers => [:facebook ]
 #:validatable,
-attr_accessible :delete_pimage,:ArtistName,:Firstname,:Lastname,:Country,:Howdouknow,:Terms, :email, :password,:Role,:provider,:uid,:password, :password_confirmation,:About,:Street,:HomeTown,:StageName,:StateProvince,:Artist_blog,:Facebook,:Twitter,:MySpace,:Soundcloud,:GooglePlus,:YouTube,:Soundclick,:Instagram,:pimage
+attr_accessible :state_code,:delete_pimage,:ArtistName,:Firstname,:Lastname,:Country,:Howdouknow,:Terms, :email, :password,:Role,:provider,:uid,:password, :password_confirmation,:About,:Street,:HomeTown,:StageName,:StateProvince,:Artist_blog,:Facebook,:Twitter,:MySpace,:Soundcloud,:GooglePlus,:YouTube,:Soundclick,:Instagram,:pimage
 
 validates :Firstname, :Lastname, length: { maximum:25 }, presence: true
   #validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i, :on => :create

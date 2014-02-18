@@ -1775,8 +1775,7 @@ input.check{
 }
 
 .join_rt input{
-	width:96%;
-	margin:0 0 12px 0;	
+		margin:0 0 12px 0;	
 }
 
 .join_rt label input.check{

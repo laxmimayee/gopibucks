@@ -53,6 +53,25 @@ $(document).ready(function(){
 
     });
 
+  function state_cod(){ 
+    alert(" Please Select State code");
+    $.ajax({
+      type: 'GET',
+      url: "/home/state_codes",
+      data: {
+        'country' : $("#user_Country").val()
+      }
+    }).done(function(text) {
+      $('#user_state_code').empty().append(text);
+    });
+  }
+
+ 
+  
+   
+     
+    
+
 
 </script>
 
@@ -112,7 +131,7 @@ $(document).ready(function(){
                 
                  <h2>CONFIGURATION</h2>
                 <ul>
-                  <li><span><%= image_tag("setting.png") %></span>Settings</li>
+                  <li><span><%= image_tag("setting.png") %> <%#= link_to "Change your password", edit_user_password_path %></span>Settings</li>
                    
                 </ul>
             </div>
@@ -158,8 +177,27 @@ $(document).ready(function(){
               <div class="row-fluid form_sec"><!--form raw !-->
                     <div class="span2"> <%= f.label :"HomeTown" %></div>
                     <div class="span4"><%= f.text_field :HomeTown %></div>  
-                    <div class="span3"> <%= f.collection_select :Country, Country.order(:name), :id, :name,{:include_blank=> "Select a Country"} %> </div> <!-- add a feild for Country Code !-->
-                    <div class="span2">  <%= f.grouped_collection_select :StateProvince, Country.order(:name), :states, :name, :id, :name, {:include_blank=> "Select a City"}  %>   </div> <!-- add a feild for State Code !-->
+                    <div class="span3">  
+
+                      <div id="country_id" name ="country_id" >
+                      <%= f.select :Country, Country.all.collect {|s| [s.name,s.code]},{:prompt=>"Select Country"},:onchange=>"state_cod()"%>
+
+                    </div>
+
+
+
+                       </div> <!-- add a feild for Country Code !-->
+                    <div class="span2"> 
+                      <div name ="state_code" id ="state_code" >
+               
+               
+                
+                      
+                        <%=f.select :state_code, {},:prompt=>"Select code"%>
+
+                      </div>
+
+                      </div> <!-- add a feild for State Code !-->
                     <div class="span1"></div>
                </div><!--form raw !-->
                 

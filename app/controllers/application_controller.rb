@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
  private
 
     def configure_devise_permitted_parameters
-      registration_params = [:delete_pimage,:ArtistName,:Firstname,:Lastname,:Country,:Howdouknow,:Terms, :email,:Role,:provider,:uid,:password, :password_confirmation,:About,:Street,:HomeTown,:StageName,:StateProvince,:Artist_blog,:Facebook,:Twitter,:MySpace,:Soundcloud,:GooglePlus,:YouTube,:Soundclick,:Instagram,:pimage ]
+      registration_params = [:delete_pimage,:state_code,:ArtistName,:Firstname,:Lastname,:Country,:Howdouknow,:Terms, :email,:Role,:provider,:uid,:password, :password_confirmation,:About,:Street,:HomeTown,:StageName,:StateProvince,:Artist_blog,:Facebook,:Twitter,:MySpace,:Soundcloud,:GooglePlus,:YouTube,:Soundclick,:Instagram,:pimage ]
 
                 if params[:action] == 'update'
                   devise_parameter_sanitizer.for(:account_update) { 
