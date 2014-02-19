@@ -8,7 +8,8 @@ devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks", :reg
  post "/registrations/update"
  get "/home/state_cities"
  get "/home/state_codes"
-
+  get "/home/settings"
+  get "/users/basicinfo"
   #devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

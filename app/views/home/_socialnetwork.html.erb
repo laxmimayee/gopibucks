@@ -1,0 +1,70 @@
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+
+<%= devise_error_messages! %> 
+
+<div class= "Basicinfo">
+                <div class="row-fluid form_sec"><!--form raw !-->
+                    <div class="span2"> <%= f.label :"Website" %></div>
+                    <div class="span5"><%= f.text_field :Artist_blog %></div>
+                    <div class="span5"></div>
+            
+                </div><!--form raw !-->
+                
+                <div class="row-fluid form_sec"><!--form raw !-->
+                    <div class="span2"><%= f.label :"Facebook" %></div>
+                    <div class="span5"><%= f.text_field :Facebook %></div>
+                    <div class="span5"></div>
+            
+                </div><!--form raw !-->
+                
+                <div class="row-fluid form_sec"><!--form raw !-->
+                    <div class="span2"><%= f.label :"Twitter" %> </div>
+                    <div class="span5"><%= f.text_field :Twitter %></div>
+                    <div class="span5"></div>
+            
+                </div><!--form raw !-->
+                
+                <div class="row-fluid form_sec"><!--form raw !-->
+                    <div class="span2"><%= f.label :"MySpace" %> </div>
+                    <div class="span5"><%= f.text_field :MySpace %></div>
+                    <div class="span5"></div>
+          
+                </div><!--form raw !-->
+                
+                <div class="row-fluid form_sec"><!--form raw !-->
+                    <div class="span2"><%= f.label :"Soundcloud" %> </div>
+                    <div class="span5"><%= f.text_field :Soundcloud %></div>
+                    <div class="span5"></div>
+            
+                </div><!--form raw !-->
+                
+                <div class="row-fluid form_sec"><!--form raw !-->
+                    <div class="span2"><%= f.label :"Google+" %> </div>
+                    <div class="span5"> <%= f.text_field :GooglePlus %> </div>
+                    <div class="span5"></div>
+            
+                </div><!--form raw !-->
+                
+                <div class="row-fluid form_sec"><!--form raw !-->
+                    <div class="span2"> <%= f.label :"YouTube" %>  </div>
+                    <div class="span5"> <%= f.text_field :YouTube %> </div>
+                    <div class="span5"></div>
+            
+                </div><!--form raw !-->
+                
+                <div class="row-fluid form_sec"><!--form raw !-->
+                    <div class="span2"> <%= f.label :"Soundclick" %> </div>
+                    <div class="span5"> <%= f.text_field :Soundclick %></div>
+                    <div class="span5"></div>
+            
+                </div><!--form raw !-->
+                
+                <div class="row-fluid form_sec"><!--form raw !-->
+                    <div class="span2"> <%= f.label :"Instagram" %> </div>
+                    <div class="span5"> <%= f.text_field :Instagram %></div>
+                    <div class="span5"></div>
+            
+                </div><!--form raw !-->
+                
+              </div>
+  <% end %>

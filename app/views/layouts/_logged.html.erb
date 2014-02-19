@@ -7,6 +7,10 @@
                         <li> <%= image_tag("dboard.png") %> <a href= "/users/edit" >  Dashboard</a></li>
                            
                               <li><%= image_tag("l_out.png") %> <%= link_to('Logout', destroy_user_session_path, :method => :delete) %> </li>
+
+                              <li><%= image_tag("home_icon.png") %> <%= link_to('Home',"/users/index") %> </li>
+
+
                           </ul>
                       </li>
                       <li><a href="#">Help</a></li>

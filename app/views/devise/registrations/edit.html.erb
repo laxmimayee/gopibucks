@@ -131,7 +131,16 @@ $(document).ready(function(){
                 
                  <h2>CONFIGURATION</h2>
                 <ul>
-                  <li><span><%= image_tag("setting.png") %> <%#= link_to "Change your password", edit_user_password_path %></span>Settings</li>
+                  <li><span><%=  image_tag("setting.png") %> <a href ="#"> Settings </a>
+
+<!-- settings click chesthe registration change password page display kavale -->
+
+       <%#= link_to "Change your password", edit_user_password_path %></span>
+
+
+
+
+                  </li>
                    
                 </ul>
             </div>
@@ -155,9 +164,19 @@ $(document).ready(function(){
                 <div class="tab_sec"><!--tab section!-->
                   <ul>
                       <li> <div class= "binfo"><a href="" class="act">Basic Info</a></div></li>
-                      <li> <div id= "sinfio" ><a href="" id="act1" >Social Networks</a></li></div>
+                      <li> <div id= "sinfio" >
+<!-- anna ajax call check ceyava --> 
+                       <%= link_to 'Socialnetowrk', "basicinfo_path", :remote => true %>
+
+<!-- anna ajax call check ceyava --> 
+
+
+ <!-- old HTML -->  <!-- <a href="" id="act1" >Social Networks</a> --></li></div>
                     </ul>
                 </div><!--tab section!-->
+                <div name ="Basicinfo" id ="Basicinfo" >
+
+                </div>
 
 
 
@@ -191,9 +210,9 @@ $(document).ready(function(){
                       <div name ="state_code" id ="state_code" >
                
                
-                
+                        <%= f.select :state_code, State.all.collect {|s| [s.iso]} %>
                       
-                        <%=f.select :state_code, {},:prompt=>"Select code"%>
+                        <%#=f.select :state_code, {},:prompt=>"Select code"%>
 
                       </div>
 

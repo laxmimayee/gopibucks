@@ -1,0 +1,88 @@
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+
+
+
+<div class="container"><!--container part-->
+  <div class="row-fluid join">
+      <div class="span3"><!--left section!-->
+          <div class="lft_part">
+             
+                
+               <h2>free*</h2>
+                <p><strong>12 Beats*</strong> (.wav format)</p>
+                <p><strong>5 GB</strong> of Track outs storage</p>
+                <p>Embed your store anywhere<span>Your Website, Your Soundclick page, etc.</span></p>
+                <p>Create Sound Packs<span>Select your beats, sell them in bulk</span></p>
+                <p>Transaction <strong>fee: 28%</strong> </p>
+                <em>* Free until beta period is over</em>
+            </div>
+        </div><!--left section!-->
+        <div class="span4"><!--right section!-->
+          <div class="join_rt"><!--join right section!-->
+              <h2>Edit Beatbucks Account Information  </h2>
+
+                   <!-- add role selection -->
+                   <div class="role" > 
+                  <%= f.label :"Are You A" %>
+                <%= f.select :Role, options_for_select(%w[ MusicLover Producer/BeatMaker/Composer DJ Singer Others ]) %>
+                 </div>
+
+                 <div class= "Artist" >
+                <%= f.label :"Artist Name or Stage Name" %>
+                <%= f.text_field :ArtistName , :autofocus => true %>
+                </div>
+
+                <%= f.label :Firstname %>
+                <%= f.text_field :Firstname %>
+
+
+                <%= f.label :Lastname %>
+                <%= f.text_field :Lastname %>
+
+                <!-- add jquery/country selection -->
+                <%= f.label :Country %>
+                <%= f.select :Country, Countries.all.collect {|l| [ l.name  ] } %>
+                <%#= f.text_field :Country %>
+
+                <%= f.label :"Email address" %>
+                <%= f.email_field :email%>
+
+                <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+                <%= f.password_field :current_password %>
+
+
+                <%= f.label :"Choose password" %>
+                <%= f.password_field :password %>
+
+                <%= f.label :"Re-type password" %>
+                <%= f.password_field :password_confirmation %>
+
+
+              </br>
+                <%= f.submit "Update" %>
+                
+                
+            </div><!--join right section!-->
+
+            
+
+           
+        <div class="span5"> 
+
+
+
+
+         </div>
+    </div>
+
+ 
+           
+
+     </div>
+
+</div><!--container part-->
+ <div class = "span4" , style="margin-top: 350px;background-color:#fff; box-shadow: 0 15px 15px rgba(0, 0, 0, 0.5); color: red ", postion = "absolute">
+       <%= devise_error_messages! %>
+         
+             </div>
+<% end %>

@@ -51,6 +51,13 @@ def update
 
 end
 
+
+def basicinfo
+
+render '/layouts/basicinfo'
+
+end
+
  
 
 

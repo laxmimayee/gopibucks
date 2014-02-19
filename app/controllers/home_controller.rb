@@ -50,9 +50,20 @@ def state_codes
     render :text=>@str
   end
 
+def basicinfo
+
+  render '/home/basicinfo'
+
+#render nothing: true
+
+end
 
 
+def socialnetwork
 
+render nothing: true
+
+end
 
 
 

@@ -1,0 +1,95 @@
+<script>
+function state_cod(){ 
+    alert(" Please Select State code");
+    $.ajax({
+      type: 'GET',
+      url: "/home/state_codes",
+      data: {
+        'country' : $("#user_Country").val()
+      }
+    }).done(function(text) {
+      $('#user_state_code').empty().append(text);
+    });
+  }
+
+
+function basicinfo(){ 
+    alert(" XXX");
+    $.ajax({
+      type: 'GET',
+      url: "/home/basicinfo",
+      data: {
+        /*'country' : $("#user_Country").val()*/
+      }
+    }).done/*(function(text) {
+      $('#user_state_code').empty().append(text);
+    });*/
+  }
+
+
+
+
+
+
+
+</script
+
+
+
+
+ <div class="row-fluid form_sec"><!--form raw !-->
+                        <div class="span2"> <%= f.label :"Artist Name or Stage Name" %> </div>
+                         <div class="span4"><%= f.text_field :ArtistName %></div>
+                          <div class="span6"> <%= current_user.ArtistName %> .Beatbucks.com </div>
+                       
+ </div><!--form raw !-->
+                
+  <div class="row-fluid form_sec"><!--form raw !-->
+                                <div class="span2"> <%= f.label :"HomeTown" %></div>
+                                <div class="span4"><%= f.text_field :HomeTown %></div>  
+          <div class="span3">  
+
+          <div id="country_id" name ="country_id" >
+                                  <%= f.select :Country, Country.all.collect {|s| [s.name,s.code]},{:prompt=>"Select Country"},:onchange=>"state_cod()"%>
+
+            </div>
+
+
+
+          </div> 
+
+
+             <div class="span2"> 
+                      <div name ="state_code" id ="state_code" >
+               
+               
+                        <%= f.select :state_code, State.all.collect {|s| [s.iso]} %>
+                      
+                        <%#=f.select :state_code, {},:prompt=>"Select code"%>
+
+                      </div>
+
+            </div> <!-- add a feild for State Code !-->
+                    <div class="span1"></div>
+   </div><!--form raw !-->
+                
+              <div class="row-fluid form_sec"><!--form raw !-->
+                  <div class="span2"> <%= f.label :"Profile image" %></div>
+                    <div class="span8"> <ul> <span1> <li> <%=  image_tag (@current_user.pimage),:style => "max-width:35%;border 5px solid #00000;" %> </li> </span1>
+
+                        <span> <li><%= f.check_box(:delete_pimage) %>  Delete </li></span> 
+                                <span> <li><%=  f.file_field :pimage %></li></ul>  </span> 
+                       </div>
+                  
+              </div><!--form raw !-->
+                
+                 <div class="row-fluid form_sec"><!--form raw !-->
+                  <div class="span2"><%= f.label :"About" %></div>
+                    <div class="span5">  <%= f.text_area :About, size: "5x5" %>   </div>
+                    <div class="span5"></div>
+
+                    </div><!--form raw !-->
+               
+
+
+             
